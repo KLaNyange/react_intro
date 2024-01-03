@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 30px;
+    list-style: none;
+    margin: 30px;
+    background-color: palevioletred;
+}
