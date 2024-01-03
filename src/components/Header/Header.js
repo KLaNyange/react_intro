@@ -4,8 +4,9 @@ function Header(){
     return(
         <div>
             <h1>Hello {prenom}</h1>
-            <img src="./images/img-1.jpg" alt="" />
-            <img src={img} alt="" />
+            <img src="./images/img-1.jpg" alt="" /> {/* Sans import avec l'image dans le public */}
+            <img src={img} alt="" /> {/* Avec l'import avec l'image dans SRC*/}
+            
         </div>
     )
 }
