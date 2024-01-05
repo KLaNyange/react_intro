@@ -6,7 +6,7 @@ import DemoComponent2 from './components/DemoComponent2/DemoComponent2.js';
 
 function App() {
 
-  let age = 29
+  let age = 2
   // let pageContent;
   // if (age >= 18) {
   //   pageContent = <DemoComponent/>
@@ -22,8 +22,12 @@ function App() {
     <div className="App">
       {/* <Header/> */}
       <NavBar />
-      {age}
-      {pageContent}
+      {/* {age}
+      {pageContent} */}
+      {age >= 18 && <DemoComponent/> }
+      {age < 18 && <DemoComponent2/> }
+      
+      {age >= 18 ? <DemoComponent/> : <DemoComponent2/>}
     </div>
   );
 }
