@@ -1,0 +1,4 @@
+.cars{
+    display: flex;
+    justify-content: space-evenly;
+}

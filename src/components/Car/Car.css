@@ -1,0 +1,24 @@
+.car{
+    background: plum;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+.wheels{
+    display: flex;
+    justify-content: space-between;
+}
+.wheel{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.wheel:last-of-type{
+    /* background-color: grey; */
+    right: 0;
+}

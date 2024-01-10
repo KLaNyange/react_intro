@@ -8,10 +8,10 @@ function NavBar(){
     return(
     <div className="navbar">
         <ul>
-            <li onClick={()=>navigation('Home')}>Home</li>
+            {/* <li onClick={()=>navigation('Home')}>Home</li>
             <li onClick={()=>navigation('Contact')}>Contact</li>
-            <li onClick={()=>navigation('About')}>About</li>
-            {/* {nav.map((item, index)=> <li key={index} onClick={()=>navigation(item)}>{item}</li>)} */}
+            <li onClick={()=>navigation('About')}>About</li> */}
+            {nav.map((item, index)=> <li key={index} onClick={()=>navigation(item)}>{item}</li>)}
         </ul>
     </div>
     )
