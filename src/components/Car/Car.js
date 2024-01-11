@@ -1,7 +1,15 @@
 import './Car.css'
 
-function Car({ name, year, data }) {
+function Car(props) {
     return (
+        <div className="car">
+            <h1>{props.data.name}</h1>
+            <h1>{props.data.year}</h1>
+            <div className="wheels">
+                <div className='wheel'></div>
+                <div className='wheel'></div>
+            </div>
+        </div>
         // <div className="cars">
         //     <div className="car">
         //         <h1>BMW</h1>
@@ -38,14 +46,7 @@ function Car({ name, year, data }) {
         //         <h1>{data[3].year}</h1>
         //     </div>
         // </div>
-        <div className="car">
-            <h1>{name}</h1>
-            <h1>{year}</h1>
-            <div className="wheels">
-                <div className='wheel'></div>
-                <div className='wheel'></div>
-            </div>
-        </div>
+        
     )
 }
 export default Car

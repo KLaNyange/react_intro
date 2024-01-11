@@ -46,7 +46,7 @@ function App() {
       year: 2002
     },
     {
-      id:1,
+      id:4,
       name: "Dacia",
       year: 2012
     },
@@ -60,8 +60,8 @@ function App() {
         {/* <Car/> */}
         {/* <Car data ={cars}/> */}
         {cars.map((item, index)=> (
-          <Car key={index} name = {item.name} year = {item.year}/>
-          // <Car key={item.id} name = {item.name} year = {item.year}/>
+          <Car key={index} name = {item.name} year = {item.year}/> // lorsqu'on fait un map on doit avoir une key (sinon on a un warning) lorsqu'on on fait un map sur un element qui n'a pas ID la valeur de key sera egal à l'index
+          // <Car key={item.id} name = {item.name} year = {item.year}/> // lorsqu'on fait un map on doit avoir une key (sinon on a un warning) lorsqu'on on fait un map sur un element qui a un ID la valeur de key sera egal à l'ID
         ))}
       </div>
       {/* {age} */}
